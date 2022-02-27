@@ -20,6 +20,7 @@ train_loader = torch.utils.data.DataLoader(
                                    torchvision.transforms.Normalize(
                                        (0.1307,), (0.3081,))
                                ])),
+#     batch_size: 加载数量  shuffle：随机打散
     batch_size=batch_size, shuffle=True)
 
 test_loader = torch.utils.data.DataLoader(
